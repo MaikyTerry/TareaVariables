@@ -5,44 +5,17 @@ import java.util.Scanner;
 public class UTP {
 
 	public static void main(String[] args) {
-		int nota;
+		int sueldo;
+		double ns, sf;
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Ingrese un numeor entre 0 y 10");
-		nota = scan.nextInt();
-
-		switch (nota) {
-		case 1:
-			System.out.println("UNO");
-			break;
-		case 2:
-			System.out.println("DOS");
-			break;
-		case 3:
-			System.out.println("TRES");
-			break;
-		case 4:
-			System.out.println("CUATRO");
-			break;
-		case 5:
-			System.out.println("CINCO");
-			break;
-		case 6:
-			System.out.println("SEIS");
-			break;
-		case 7:
-			System.out.println("SIETE");
-			break;
-		case 8:
-			System.out.println("NOTABLE");
-			break;
-		case 9:
-			System.out.println("NUEVE");
-			break;
-		case 10:
-			System.out.println("EXCELENTE");
-			break;
-
-		}
-
+		System.out.println("Ingrese su sueldo");
+		sueldo = scan.nextInt();
+		if (sueldo<1000) {
+			ns=sueldo*0.15;
+			sf=sueldo +ns;
+			System.out.println("Su sueldo nuevo sueldo sera: "+sf);
+		}else
+			System.out.println("su sueldo es el mismo: "+sueldo);
+		
 	}
 }
