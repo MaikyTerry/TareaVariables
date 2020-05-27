@@ -5,20 +5,20 @@ import java.util.Scanner;
 public class Repeticiones2 {
 
 	public static void main(String[] args) {
-		int num, num1, sum, i;
+		int alum, edad, sum, i;
 		Scanner scan = new Scanner(System.in);
-		System.out.println("ingrese la cantidad de numeros a sumar");
-		num = scan.nextInt();
+		System.out.println("ingrese la cantidad DE ALUMNOS");
+		alum = scan.nextInt();
 		sum = 0;
-		i =0;
+		i = 0;
 		// num = 1;
 		do {
-			System.out.println("ingrese numero");
-			num1 = scan.nextInt();
-			sum = sum + num1;// acumulador
+			System.out.println("ingrese la edad del alumno");
+			edad = scan.nextInt();
+			sum = sum + edad;// acumulador
 			i++;
-		} while (i != num);
-		System.out.println("la suma de sus numeros ingresados es: " + sum);
+		} while (i != alum);
+		System.out.println("la suma de sus numeros ingresados es: " + (sum)/alum);
 	}
 
 }
